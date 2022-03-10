@@ -1,0 +1,11 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  min-height: 100vh;
+  background-color: #141414ea;
+;
+  color: aliceblue;
+  size: 100vh;
+}
