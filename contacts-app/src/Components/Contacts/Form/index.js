@@ -51,7 +51,7 @@ function Form({addContact, oldContacts}) {
             <div>
                 <input type="tel" name='phone' value={form.phone} placeholder='Phone Number' onChange={onChangeForm} />
             </div>
-            <button onClick={onSubmit}>Add</button>
+            <button onClick={onSubmit}>Add to List</button>
         </form>
     )
 }

@@ -1,7 +1,9 @@
-#kutu-kutu-pense{
+#container{
     width: 500px;
-    background-color: black;
+    background-color: #203239;
     padding: 20px;
+    color: #EEEDDE;
+    border-radius: 5%;
 }
 
 input{
@@ -10,6 +12,8 @@ input{
     padding: 5px;
     margin: 5px 0px;
     border-radius: 5px;
+    background-color: #141E27;
+    color: #EEEDDE;
 }
 
 ul{
@@ -24,7 +28,7 @@ li{
     list-style: none;
     display: flex;
     justify-content: space-between;
-    background-color: #1f1f1fbe;
+    background-color: #203239;
 }
 
 button{
@@ -32,12 +36,13 @@ button{
     margin: 10px 0px;
     display: flex;
     justify-content: flex-end;
+    background-color: #E0DDAA;
 }
 
 h2{
     text-align: center;
 }
 
-text{
-    
+.header{
+    color:#E0DDAA
 }

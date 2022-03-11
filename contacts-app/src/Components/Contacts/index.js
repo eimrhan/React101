@@ -16,8 +16,8 @@ function Contacts() {
     }, [contacts] ) // contacts değiştinde yukarıdaki işlemi gerçekleştir.
 
     return (
-        <div id='kutu-kutu-pense'>
-            <h2>Contacts</h2>
+        <div id='container'>
+            <h2 className='header'>Contacts</h2>
             <Form addContact={SetContacts} oldContacts={contacts} />
             {/* SetContacts'i addContact prop'uyla Form'a göderiyoruz. */}
             {/* ve ekleme yapıldığında eski verilerin silinmemesi için eski verileri spread operatörle almamız gerek
