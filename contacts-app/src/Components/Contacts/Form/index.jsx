@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 
 
 function Form({addContact, oldContacts}) {
@@ -11,12 +11,12 @@ function Form({addContact, oldContacts}) {
         setForm({...form, [e.target.name]: e.target.value })
     }
 
-    //* oldContacts state'i güncellendiğinde (Contacts komponentindeki contacts prop'una bağlı)
     // form girdilerini temizlemek için alternatif yöntem.
+    /*
     useEffect(() => {
         setForm({fullname:"", phone:""}) // burada initialFormValues değişkenini kullanınca uyarı alıyorum
     },[oldContacts])
-
+    */ // oldContacts state'i güncellendiğinde. (Contacts komponentindeki contacts prop'una bağlı)
     
     const onSubmit = (e) => {
 

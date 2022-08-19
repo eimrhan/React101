@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 import "./style.css"
 
@@ -10,10 +10,6 @@ function Contacts() {
 
     const [contacts, SetContacts] = useState([]);
     // alt komponentte oluşturulacak verileri burada oluşturulan bir state'e yazacağız.
-
-    useEffect( () => {
-        console.log(contacts)
-    }, [contacts] ) // contacts değiştinde yukarıdaki işlemi gerçekleştir.
 
     return (
         <div id='container'>
