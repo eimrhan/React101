@@ -1,0 +1,25 @@
+.App {
+    background-color: #141E27;
+}
+
+#container{
+    background-color: #203239;
+    color: #EEEDDE;
+}
+
+input{
+    background-color: #141E27;
+    color: #EEEDDE;
+}
+
+li{
+    background-color: #203239;
+}
+
+button{
+    background-color: #E0DDAA;
+}
+
+.header{
+    color:#E0DDAA
+}

@@ -5,7 +5,6 @@ import "./style.css"
 import Form from './Form'
 import List from './List'
 
-
 function Contacts() {
 
     const [contacts, SetContacts] = useState([]);
