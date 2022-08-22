@@ -14,12 +14,6 @@
     border-radius: 5%;
 }
 
-.theme-button{
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-}
-
 input {
     width: 100%;
     box-sizing: border-box;
@@ -44,6 +38,7 @@ li {
 button {
     padding: 10px;
     margin: 10px 0px;
+    border-radius: 5px;
     display: flex;
     justify-content: flex-end;
 }

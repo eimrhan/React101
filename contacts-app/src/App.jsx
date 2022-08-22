@@ -1,5 +1,5 @@
 import Contacts from './components/Contacts';
-import ThemeSwitcher from './components/themeSwitcher';
+import ThemeSwitcher from './components/ThemeSwitcher';
 
 function App() {
   return (

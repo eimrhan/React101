@@ -1,0 +1,10 @@
+.theme-button {
+    position: absolute;
+    top: 1rem;
+}
+
+#theme-button {
+    border-radius: 1rem;
+    font-size: 1rem;
+    padding: 1rem;
+}

@@ -1,8 +1,13 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import './theme.css'
 
 function ThemeSwitcher() {
 
-    const [theme, setTheme] = useState('dark')
+    const [theme, setTheme] = useState(localStorage.getItem('theme') ?? 'dark');
+
+	useEffect(() => {
+		localStorage.setItem('theme', theme);
+	}, [theme]);
 
     let themeLink = document.getElementById('app-theme');
 
@@ -12,7 +17,7 @@ function ThemeSwitcher() {
 
     return (
         <div className='theme-button'>
-            <button
+            <button id='theme-button'
                 onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
                 Change Theme
             </button>

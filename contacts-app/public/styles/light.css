@@ -23,3 +23,7 @@ button{
 .header{
     color:#7897AB
 }
+
+#theme-button:hover {
+    background-color: #E0DDAA;
+}
