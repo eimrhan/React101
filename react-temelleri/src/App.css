@@ -1,0 +1,51 @@
+.App {
+  min-height: 100vh;
+  flex-direction: column;
+  display: flex;
+  /*align-items: center;
+  justify-content: center; */
+  font-size: calc(1.25rem);
+  padding: 2%;
+}
+
+a {
+  color: #4aa4bb
+}
+.active{
+  color: #61dafb
+}
+
+.navbar{
+  flex-direction: row;
+}
+
+.icerik{
+  border-style: outset;
+  padding: 1% 2%;
+}
+
+.ortadayazi{
+  text-align: center;
+  margin: 100px;
+}
+
+h3, h4{
+  text-decoration: underline;
+  color: #A5C9CA;
+}
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  color: #61dafb;
+}
+
+describe{
+  color: lightslategrey;
+}
+
+.counter {
+  text-align: center;
+  border: 1px solid white;
+  width: fit-content;
+  margin: 100px auto;
+}
