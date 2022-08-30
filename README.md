@@ -1,3 +1,3 @@
 # React Bootcamp
 
-### React öğrenim sürecimdeki örnek kodlar ve basit uygulamalar bu dizinde yer alacak.
+### React öğrenim sürecimdeki açıklamalı örnek kodlarım ve basit uygulamalar bu repoda yer alacak.

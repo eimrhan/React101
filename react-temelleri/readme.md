@@ -2,7 +2,7 @@
 
 ### (Kendime Notlar)
 
-React öğrenim sürecimde yazdığım kod örnekleri basit uygulamalar bu repoda yer alacak.
+React öğrenim sürecimde yazdığım kod örnekleri ve basit uygulamalar bu dizinde yer alacak.
 
 
  ## Tech Stack 
