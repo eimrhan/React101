@@ -5,7 +5,7 @@ function ClassNames() {
     <div>
         <h2>classNames Kullanımı:</h2>
         <describe>classNames'i projeye dahil ederek değişen durumlara göre farklı elementlere farklı class'lar atayabilirsin.</describe>
-        <br/>
+        <hr/>
 
         <h4>Örnek Çıktıları:</h4>
         <Buttons text="Buton1" variant='default'/>

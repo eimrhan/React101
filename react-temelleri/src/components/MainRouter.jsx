@@ -1,27 +1,28 @@
 import { Route, Routes, Link, NavLink } from "react-router-dom"
 
 import Home from "./Home"
-import Giris from "./2.Giris"
 import Components from "./1.Components"
+import Giris from "./2.Giris"
 import Props from "./3.Props"
 import ClassNames from "./3.Props/classNames"
+import LifeCycle from "./4.LifeCycle"
 import States from  "./5.States"
 import Counter from  "./5.States/counter"
 import InputExample from  "./5.States/input"
 import Todos from "./5.States/useReducer"
-import LifeCycle from "./4.LifeCycle"
-import Styling from "./8.Styling"
-import { Baslik } from "./8.Styling/styledComponents/baslik"
 import Fetching from "./6.Fetching"
 import AxiosExample from "./6.Fetching/axiosExample"
 import FormikExample from "./7.Formik"
 import FormikHandleExample from "./7.Formik/handles"
 import UseFormikExample from "./7.Formik/useFormik"
 import SignIn from "./7.Formik/SignIn"
-import Memoization from "./10.Memoization"
-import UseMemoExample from "./10.Memoization/useMemo"
-import UseCallback from "./10.Memoization/useCallback"
-import ContextAPI from "./9.ContextAPI"
+import Styling from "./8.Styling"
+import { Baslik } from "./8.Styling/styledComponents/baslik"
+import Memoization from "./9.Memoization"
+import UseMemoExample from "./9.Memoization/useMemo"
+import UseCallback from "./9.Memoization/useCallback"
+import ContextAPI from "./10.ContextAPI"
+import Redux from "./11.Redux"
 import PageNotFound from "./404Page"
 
 export default function MainRouter() {
@@ -43,7 +44,7 @@ export default function MainRouter() {
                 <ul>
                   <li><NavLink to="states/counter">Counter</NavLink></li>
                   <li><NavLink to="states/input-example">Input Example</NavLink></li>
-                  <li><NavLink to="/states/reducer">useReduce</NavLink></li>
+                  <li><NavLink to="/states/reducer">useReducer</NavLink></li>
                 </ul>
               </li>
               <li><NavLink to="/lifecycle">LifeCycle</NavLink></li>
@@ -66,6 +67,7 @@ export default function MainRouter() {
                 </ul>
               </li>
               <li><NavLink to="context-api">ContextAPI</NavLink></li>
+              <li><NavLink to="redux">Redux</NavLink></li>
             </ol>
           </div>
         </div>
@@ -109,6 +111,7 @@ export default function MainRouter() {
             </Route>
             <Route path="/context-api" element={<ContextAPI/>}/>
             <Route path="*" element={<PageNotFound/>} />
+            <Route path="/redux" element={<Redux/>} />
           </Routes>
         </div>
       </div>

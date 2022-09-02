@@ -32,7 +32,7 @@ const increment = useCallback(() => {
 
     return(
         <div>
-            <h3>usCallback</h3>
+            <h3>useCallback</h3>
             <describe>
             Parent komponentte işlem gören bir değişken child komponentteki bir işleme bağlıysa,
             (yani childdaki bir butona bağlı olan parenttaki sayaç gibi, bu örnekte de gördüğümüz)

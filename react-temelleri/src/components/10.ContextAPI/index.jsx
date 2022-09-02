@@ -8,6 +8,13 @@ function ContextAPI() {
   return (
     <div>
         <h2>Context API</h2>
+        <describe>
+            Context, React'ın kendi içerisinde barındırdığı bir state management aracıdır.
+            State'leri daha global bir şekilde yönetmek için kolaylık sağlar.
+        </describe>
+        <hr/>
+
+        <h4>Örnek Çıktıları</h4>
 
               {/* //! Context API */}
         <ThemeProvider>

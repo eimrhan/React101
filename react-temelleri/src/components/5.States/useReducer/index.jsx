@@ -57,7 +57,7 @@ function Todos() {
 
 	return (
 		<>
-            <h2>useReduce</h2>
+            <h2>useReducer</h2>
             <describe>
                 Birden fazla state'in kullanıldığı kompleks yapılarda useState yerine kullanılabilir.
 
@@ -67,7 +67,8 @@ function Todos() {
 
                 <ReactPlayer url='https://www.youtube.com/watch?v=i2_zltNQADA'/>
             </describe>
-
+			<hr/>
+			
             <h4>Örnek Çıktıları</h4>
             <h3>To-Do App</h3>
 			<InputText  type="text" value={state.todo} onChange={e => dispatch({ type: 'UPDATE_TODO', value: e.target.value })}/>

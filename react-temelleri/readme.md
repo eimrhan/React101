@@ -10,6 +10,8 @@ React öğrenim sürecimde yazdığım kod örnekleri ve basit uygulamalar bu di
 * React
 * react-router
 * react-helmet
+* react-redux
+* reduxjs/toolkit
 * Context-API
 * styled-components
 * primereact
@@ -20,7 +22,8 @@ React öğrenim sürecimde yazdığım kod örnekleri ve basit uygulamalar bu di
 * classnames
 ```
 
- <!-- ![preview](./preview.jpg) -->
+## Preview
+ ![preview](./preview.jpg)
 
 ---
 ## Available Scripts
