@@ -28,3 +28,7 @@ export default counterSlice.reducer;
 
 export const { decrement, increment, reset, incrementByAmount } = counterSlice.actions;
 // reducer fonskiyonlarımızı da herhangi bir componentte kullanabilmek için actions altında dışa aktarıyoruz.
+
+export const selectValue = state => state.value;
+/* ayrıca state değerlerimizi bir çok farklı komponentte çağırmamız gerekecekse, 
+selector'ü slice dosyasında tanımlamak kod tekrarını engelleyecektir.. */

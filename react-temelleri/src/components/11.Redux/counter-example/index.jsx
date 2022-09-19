@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux'
-import { decrement, increment, reset, incrementByAmount } from './counterSlice'
+import { decrement, increment, reset, incrementByAmount /* selectValue */ } from './counterSlice'
 import { useState } from 'react'
 import { Button } from 'primereact/button'
 import { InputNumber } from 'primereact/inputnumber'
@@ -9,6 +9,9 @@ function ReduxCounterExample() {
     const countValue = useSelector((state) => state.counter.value) // (counter state'inin value'su)
     // ve state'imizin değerlerine erişmek için de bu şekilde çekiyoruz.
     // (bu değere de aslında store dosyası sayesinde erişebiliyoruz.)
+    //? const countValue = useSelector(selectValue);
+    // Slice dosyamızda yazdığımız selector işlemi ile state değerimize bu şekilde de erişebiliriz.
+
     const dispatch = useDispatch();
     // reducer'daki fonksiyonlarımızı kullanabilmemiz için useDispatch'e ihtiyaç var.
     // tabi bu dispatch genel bir ifade, tek başına yeterli değil. ayrıca fonksiyonlarımızı da çekmemiz gerekli.
