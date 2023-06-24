@@ -13,14 +13,14 @@ import { store } from './components/11.Redux/store'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-/* <React.StrictMode> */  /* bunu kaldırmazsan componentler geliştirme ortamında hep 2 kez render oluyor. */
+/* <React.StrictMode> */  /* Geliştirme aşamasında kullandığın metod gibi işlemlerin mevcut versiyonla uyumlu olup olmadığını kontrol eder. */
       <Provider store={store}>  {/* Redux kullanırken App'imizi Provider ile sarmalayıp store dosyasını gönderiyoruz. */}
         <BrowserRouter>       {/* Routing işlemleri için App'imizi <BrowserRouter> ile sarmalamamız gerek. */}
           <App />
         </BrowserRouter>
       </Provider>
-/* </React.StrictMode> */ /* ne iş yaradığını araştırmadım. */
-); //* root id'li element'e App.js'i inject ediyor. Yani böylelikle index'te App'i görüyoruz.
+/* </React.StrictMode> */ /* bunu kaldırmazsan componentler geliştirme ortamında 2 kez render oluyor. */
+); //* root id'li element'e App.js'i inject ediyor. Yani böylelikle index.html'de App'i görüyoruz.
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

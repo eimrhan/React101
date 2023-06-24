@@ -8,7 +8,7 @@ function InputExample(){
     const [adress, setAdress] = useState({sehir: "sakarya", ilce: "erenler"})
     // adress'i bir obje olarak tanımlamış olduk. // adress.sehir: "sakarya" oldu.
 
-    const onChangeAdress = (e) => {
+    const onChangeAdress = (e) => {	/* event'i prop olarak göndermeye gerek yok, otomatik alır. */
         setAdress({...adress, [e.target.name]: e.target.value })
         //* event (e) onChange ile gelen bir özellik, etklinliği yakalayıp gönderdiği parametre.
         //* burada e.target.name ile input name'ini işaret ediyor ve value ile girilen değeri ona atıyor.
@@ -22,11 +22,16 @@ function InputExample(){
                 
                 <input value={name} onChange={(event) => setName(event.target.value)}></input>
                 {/* onChange (değişiklik) olduğunda eventi yakalayıp, hedefindeki değeri setName'e atıyoruz.
-                    onChange ile state kullanmadan input içeriğini alamazsın. */}
-                {/* value kullanmak zorunda değilsin (?gibi). ilk değeri value ile inputa yazdık. */}
+                    onChange ile state kullanmadan değişkenin değerini değiştiremezsin. */}
+                {/* burada input içeriğini bile değiştiremezsin çünkü value kullandık.
+										ilk değeri value ile inputa yazdık. */}
+                <br/>
+                <input onChange={(event) => name(event.target.value)}></input>
+								{/* value kullanmazsam inputa yazı yazabilirim fakat state kullanmadan değişken değişmez! */}
+                <br/>
                 <span> -&gt;</span> {name}
-
-                <br/><br/>
+								
+								<br/>
                 <input value={name}></input> {/* value kullanıp onChange kullanmadığında
                 bu input read-only olur, değerini (value) değiştiremezsin. (içine bir şey yazamazsın.) */}
                 <span>(konsolda uyarıyı buna veriyor.)</span>
