@@ -80,7 +80,9 @@ export default function MainRouter() {
         </div>
 
         <div className={"col-9 icerik"}>
-          <Link to="/"><Baslik>React Temelleri</Baslik></Link>
+          <Link to="/"><Baslik>React Temelleri</Baslik></Link> 
+					{/* Yönlendirmeleri <a href> ile verirsen SPA yapısına göre hareket etmez, sayfayı yeniden yükler.
+							bir elemente tıklayarak yönlendirme yaparken <Link to> kullan. */}
           <hr/>
 
           <Routes>
